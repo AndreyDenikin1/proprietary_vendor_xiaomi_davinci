@@ -18,6 +18,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_muqin_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_muqin_up.ogg \
     vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_yingyan_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_yingyan_down.ogg \
     vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_yingyan_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_yingyan_up.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_jojo_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_jojo_down.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_jojo_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_jojo_up.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_super_mario_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_super_mario_down.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_super_mario_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_super_mario_up.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_imperial_march_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_imperial_march_down.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_imperial_march_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_imperial_march_up.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_lightsaber_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_lightsaber_down.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_lightsaber_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_lightsaber_up.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_throne_room_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_throne_room_down.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_throne_room_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_throne_room_up.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_anime_moan_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_anime_moan_down.ogg \
+    vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_anime_moan_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_anime_moan_up.ogg \
     vendor/xiaomi/davinci/proprietary/vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb \
     vendor/xiaomi/davinci/proprietary/vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_Codec_cal.acdb \
     vendor/xiaomi/davinci/proprietary/vendor/etc/acdbdata/Forte/Forte_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_General_cal.acdb \
@@ -45,6 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor/etc/camera/eyelineblush.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eyelineblush.cng \
     vendor/xiaomi/davinci/proprietary/vendor/etc/camera/golden_rear_dc_cal_wu.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden_rear_dc_cal_wu.bin \
     vendor/xiaomi/davinci/proprietary/vendor/etc/camera/lf_facerank_model.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lf_facerank_model.bin \
+    vendor/xiaomi/davinci/proprietary/vendor/etc/camera/facedetectpp_0_5_2_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/facedetectpp_0_5_2_model \
     vendor/xiaomi/davinci/proprietary/vendor/etc/camera/mibokeh_712_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_712_opencl.bin \
     vendor/xiaomi/davinci/proprietary/vendor/etc/camera/mibokeh_712_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_712_parameter.bin \
     vendor/xiaomi/davinci/proprietary/vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin \
@@ -221,6 +234,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.motor@1.0-impl \
     libFaceGrade \
     libHalSuperSensorServer \
+    libFaceDetectpp-0.5.2 \
     libSuperSensor \
     libSuperSensorCPU \
     libVDClearShot \
@@ -257,6 +271,7 @@ PRODUCT_PACKAGES += \
     libcom.qti.chinodeutils \
     libft2vendor \
     libgf_hal \
+    libfacedet \
     libmialgo_fs \
     libmialgo_rfs \
     libmialgo_sd \
@@ -265,8 +280,7 @@ PRODUCT_PACKAGES += \
     libmivendor_module_calibration \
     libmivendor_module_hall \
     libmivendor_module_motor \
-    libmpbase \
-    liboemcrypto \
+    libmpbase_vendor \
     libremosaic_daemon \
     libremosaiclib \
     libsensorslog \
